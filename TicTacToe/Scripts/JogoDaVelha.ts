@@ -16,7 +16,7 @@ class JogoDaVelha {
     }
 
     jogada(x: number, y: number): boolean {
-       
+
         if (this.posicaoVazia(x,y, this.tabuleiro) && !this.terminou()) {
             var arrOpcoes: string[] = ['X', 'O'];
             this.tabuleiro[x][y] = arrOpcoes[this.countJogadas % 2];

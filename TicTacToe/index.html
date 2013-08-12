@@ -16,7 +16,7 @@
 </style>
 <body ng-app="JogoDaVelhaApp" ng-controller="JogoDaVelhaController">
     
-<tabuleiro model="jogo.tabuleiro" click="jogada">Jogo Da Velha</tabuleiro>
+<tabuleiro model="jogo.tabuleiro" click="jogo.jogada(x,y)">Jogo Da Velha</tabuleiro>
 
 <div ng-show="jogo.terminou()">
     O resultado foi: {{jogo.resultado() | filtroResultado }}

@@ -5,15 +5,14 @@ app.directive("tabuleiro", function () {
         restrict: 'E',
         replace: true,
         transclude: true,
-        template: '<div><div ng-transclude></div><table><tr ng-repeat="x in model"><td ng-repeat="y in x" ng-click="onClick($parent.$index, $index)" >{{y}}</td></tr></table></div>',
+        template: '<div><div ng-transclude></div>' +
+                    '<table><tr ng-repeat="x in model">' +
+                    '<td ng-repeat="y in x" ' +
+                    'ng-click="click({ x: $parent.$index, y: $index})">' +
+                    '{{y}}</td></tr></table></div>',
         scope: {
             model: '=',
-            click: '='
-        },
-        link: function (scope, elem, attrs) {
-            scope.onClick = (x, y) => {
-                scope.click(x, y);
-            }
+            click: '&'
         }
     }
 });

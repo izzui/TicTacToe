@@ -61,4 +61,3 @@ var JogoDaVelha = (function () {
     };
     return JogoDaVelha;
 })();
-//# sourceMappingURL=JogoDaVelha.js.map

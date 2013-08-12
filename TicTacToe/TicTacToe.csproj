@@ -174,5 +174,10 @@
   <ItemGroup>
     <Folder Include="Scripts\sinon\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\tabuleiro.js.map">
+      <DependentUpon>tabuleiro.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
 </Project>

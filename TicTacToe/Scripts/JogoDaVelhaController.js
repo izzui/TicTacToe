@@ -7,4 +7,4 @@ var JogoDaVelhaController = (function () {
     }
     return JogoDaVelhaController;
 })();
-//# sourceMappingURL=JogoDaVelhaController.js.map
+//@ sourceMappingURL=JogoDaVelhaController.js.map

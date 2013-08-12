@@ -9,4 +9,4 @@ describe("JogoDaVelhaController", function () {
         expect(filtroResultadoFilter("Velha")).toBe("Deu velha!");
     }));
 });
-//# sourceMappingURL=filtroResultado_spec.js.map
+//@ sourceMappingURL=filtroResultado_spec.js.map

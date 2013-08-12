@@ -85,4 +85,4 @@ describe("JogoDaVelha", function () {
         expect(jogo.countJogadas).toBe(count);
     });
 });
-//# sourceMappingURL=JogoDaVelha_spec.js.map
+//@ sourceMappingURL=JogoDaVelha_spec.js.map

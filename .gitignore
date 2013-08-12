@@ -4,3 +4,4 @@ TicTacToe/bin
 TestResults
 packages
 TicTacToe/node_modules
+*.suo

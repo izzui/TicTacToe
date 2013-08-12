@@ -26,4 +26,4 @@ describe("JogoDaVelhaController", function () {
         expect(jogo.jogada.calledWith(1, 2)).toBe(true);
     });
 });
-//# sourceMappingURL=JogoDaVelhaController_spec.js.map
+//@ sourceMappingURL=JogoDaVelhaController_spec.js.map

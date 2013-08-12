@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <script src="Scripts/angular/angular.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/filtroResultado.js"></script>
+    <script src="Scripts/tabuleiro.js"></script>
+    <script src="Scripts/JogoDaVelha.js"></script>
+    <script src="Scripts/JogoDaVelhaController.js"></script>
+    <title></title>
+</head>
+<style>
+    table, td { border: 1px solid; }
+    td { height: 100px; width: 100px; }
+
+</style>
+<body ng-app="JogoDaVelhaApp" ng-controller="JogoDaVelhaController">
+    
+<tabuleiro model="jogo.tabuleiro" click="jogada">Jogo Da Velha</tabuleiro>
+
+<div ng-show="jogo.terminou()">
+    O resultado foi: {{jogo.resultado() | filtroResultado }}
+
+    <button ng-click="jogo.novo()">Novo Jogo!</button>
+</div>
+</body>
+</html>
